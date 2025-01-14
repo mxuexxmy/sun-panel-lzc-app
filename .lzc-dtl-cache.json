@@ -1,0 +1,32 @@
+{
+  "name": "Sun-Panel",
+  "package": "cloud.lazycat.app.sun-panel",
+  "description": "一个NAS、服务器导航面板、简易docker管理器、Homepage、浏览器首页。",
+  "homepage": "",
+  "author": "hslr-s",
+  "app_features": [],
+  "subdomain": "sun-panel",
+  "version": "0.0.1",
+  "iconPath": "lzc-icon.png",
+  "composePath": "docker-compose.yml",
+  "unsupported_platforms": [],
+  "lastRouteType": "from_compose",
+  "port_mappings": {
+    "sun-panel_3002_3002": {
+      "use": true,
+      "type": "http",
+      "path": "/",
+      "targetPath": "/"
+    }
+  },
+  "image_hslr_sun-panel_1.6.1": {
+    "originalImage": "hslr/sun-panel:1.6.1",
+    "pushTarget": "lazycat",
+    "newImageName": "registry.lazycat.cloud/mxuexxmy/hslr/sun-panel:c9fc6fb5bfb7b097",
+    "timestamp": "2025-01-14T13:02:57.849Z"
+  },
+  "sun-panel_volume_/app/conf_action": "emptyDir",
+  "sun-panel_volume_/app/conf_location": "app_data",
+  "sun-panel_volume_/var/run/docker.sock_action": "emptyDir",
+  "sun-panel_volume_/var/run/docker.sock_location": "app_data"
+}
