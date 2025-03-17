@@ -1,7 +1,7 @@
 lzc-sdk-version: "0.1"
 name: Sun-Panel
 package: cloud.lazycat.app.sun-panel
-version: 0.0.4
+version: 0.0.5
 description: 一个NAS、服务器导航面板、简易docker管理器、Homepage、浏览器首页。
 homepage: ""
 author: hslr-s
@@ -15,6 +15,8 @@ application:
   usb_accel: false
   routes:
     - /=http://sun-panel.cloud.lazycat.app.sun-panel.lzcapp:3002/
+  public_path:
+    - /
 services:
   sun-panel:
     image: registry.lazycat.cloud/mxuexxmy/hslr/sun-panel:c9fc6fb5bfb7b097
